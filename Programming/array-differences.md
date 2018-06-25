@@ -53,7 +53,7 @@ NOTE: your array tracks the differences between grades, so it will be one item _
     }
 
 4: Look Back
- - Analyzing the solution
+ - Analyzing the solution ---> O(n)
  - Less Naive solution ?
   - Optimizations?
  - Refactoring
