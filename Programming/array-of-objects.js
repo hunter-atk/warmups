@@ -9,7 +9,7 @@ module.exports.removeBadPeople = (people) => {
   //   }
   // })
   // return result;
-  
+
   // const validPeople = [];
 
   // for (const person of people) {
@@ -33,12 +33,33 @@ module.exports.removeBadPeople = (people) => {
 
 module.exports.sumAgesValid = (people) => {
   let arr = removeBadPeople(people);
+  
+  if(arr == []){
+    return 'sum cannot be calculated; there are no valid people'
+  }
+
   let result = 0;
-  arr.forEach(x => {
-    result += x.age;
-  })
+  if (people == []){
+    return result;
+  }
+  for(person of people){
+    if(person.age){
+    result += person.age;
+    }
+  }
+  return result;
+
 }
 
 module.exports.sumAgesAll = (people) => {
-
+  let result = 0;
+  if (people == []){
+    return result;
+  }
+  for(person of people){
+    if(person.age){
+    result += person.age;
+    }
+  }
+  return result;
 }

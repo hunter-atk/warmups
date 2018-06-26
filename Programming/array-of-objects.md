@@ -49,7 +49,7 @@ sumAgesAll(people);
     - sumAgesValid()
       - In: Array of Objects
         - 1. [ { name: 'Andy', age: 22}, { name: 'Betty', age: -23} ]
-        - 2. [ { name: 'Andy', age: 22}, {} } ]
+        - 2. [ { name: 'Andy', age: 22}, {} ]
         - 3. [ { name: 'Andy', age: 22}, { name: '', age: 23} ]
       - Out: 
         - 1. 22
